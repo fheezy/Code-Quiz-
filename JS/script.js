@@ -43,6 +43,10 @@ function displayQuestion(){
     quizScreen.appendChild(questionElem)
     //loop over the choices and create a button for each one
     questions[currentQuestion].choices.forEach((choice) => {
+        var choiceElem = document.createElement("button");
+        choiceElem.setAttribute("class","choice-btns");
+        choiceElem.innerText = choice;
+        quizScreen.appendChild(choiceElem);
         console.log(choice)
         // create elemnets for the choice text 
         //use inner text method to insert text element 
