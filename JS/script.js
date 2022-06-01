@@ -1,8 +1,13 @@
 // VARIABLES
 //..for dom elments
-var startScreen = document.getElementById("start-screen")
-var startBtn = document.getElementById("start-btn")
-var quizScreen = document.getElementById("quiz-screen")
+var startScreen = document.getElementById("start-screen");
+var startBtn = document.getElementById("start-btn");
+var quizScreen = document.getElementById("quiz-screen");
+var question = document.getElementById("questions");
+var choices = document.getElementById("choices");
+var timeLeft = document.getElementById("Time");
+var submitBtn = document.getElementById("submit");
+var intials = document.getElementById("intials")
 
 //...for quiz variables
 var timeLeft = 15;
@@ -39,6 +44,9 @@ function displayQuestion(){
     //loop over the choices and create a button for each one
     questions[currentQuestion].choices.forEach((choice) => {
         console.log(choice)
+        // create elemnets for the choice text 
+        //use inner text method to insert text element 
+        //use appendchild 
     })
 }
 
