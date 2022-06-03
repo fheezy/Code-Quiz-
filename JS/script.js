@@ -31,7 +31,7 @@ function startQuiz(){
     console.log("quiz is starting")
     startScreen.classList.add("hide")
     // need to start the timer
-    timeLeft = setInterval(clocktick,1000);
+    
     //display a question
     displayQuestion();
 }
