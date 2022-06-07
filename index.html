@@ -10,21 +10,20 @@
 <body>
     <div class="scores"><a href="score.html">Check Highscores</a></div>
 
-    
-    <div class="container">
-        <div id="question-container" class="hide"></div>
-        <div class="controls">
-            <button id="start-btn" class="start-Btn">Start Quiz</button>
-            <button id="next-btn" class="next-Btn hide">Next</button>
+    <div class="clock">Time: <span id="time">0</span></div>
+
+    <div class="wrapper">
+        <div id="pop-up-screen" class="pop-up">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. <br>
+                 Keep in mind that an incorrect answer will penalize your score/time  <br>
+                                        by ten seconds! <br>
+            </p>
+            <button id="start">Start Quiz</button>
         </div>
     </div>
-    <!-- <div id="start-screen">
-        <h1>The Code Quiz</h1>
-        <p>Answer the questions as quickly as you can.</p>
-        <button id="start-btn" class="start-btn btn">Start the quiz</button>
-        <button id="next-btn" class="next-btn btn">Next</button>
-    </div>
-    <div id="quiz-screen"></div> -->
+
+
     <script src="./JS/script.js"></script>
 </body>
 </html>
