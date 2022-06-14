@@ -1,0 +1,1 @@
+//inputting all the questions over here for simplicty 

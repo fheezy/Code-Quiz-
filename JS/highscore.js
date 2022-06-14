@@ -1,0 +1,1 @@
+//highscore sheet, all functions will be stored here over the highscore so i can pull it with other files just by tagging the file
