@@ -29,3 +29,35 @@ text-align: center;
     top: 10px;
     left: 10px;
 }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: brown;
+    text-decoration: underline;
+    transition: color 0.1s;
+}
+
+a:hover {
+    color: black;
+}
+
+button {
+    display: inline-block;
+    position: relative; 
+    margin: 20px;
+    cursor: pointer;
+    font-family: fantasy;
+    background-color: brown;
+    font-size: 100%;
+    border-radius: 5px;
+    color: antiquewhite;
+    padding: 5px 15px;
+    border: 0;
+}
+
+button:hover {
+    background-color: green;
+}
