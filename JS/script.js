@@ -10,20 +10,20 @@ var submitBtn = document.getElementById("submit");
 var intials = document.getElementById("intials")
 
 //...for quiz variables
-var timeLeft = 15;
-var currentQuestion = 0;
-var questions = [
-    {
-        text: "what does html stand for?", 
-        choices: ["hypertext markup language", "how to make logs", "hi their my lady", "hot tammel my loco"], 
-        correct: "hypertext markup language"
-    },
-    {
-        text: "what does css stand for?", 
-        choices: ["hypertext markup language", "cascading style sheets", "hi their my lady", "hot tammel my loco"], 
-        correct: "cascading style sheets"
-    },
-]
+// var timeLeft = 15;
+// var currentQuestion = 0;
+// var questions = [
+//     {
+//         text: "what does html stand for?", 
+//         choices: ["hypertext markup language", "how to make logs", "hi their my lady", "hot tammel my loco"], 
+//         correct: "hypertext markup language"
+//     },
+//     {
+//         text: "what does css stand for?", 
+//         choices: ["hypertext markup language", "cascading style sheets", "hi their my lady", "hot tammel my loco"], 
+//         correct: "cascading style sheets"
+//     },
+// ]
 
 //FUNCTIONS
 //...to start the quiz
