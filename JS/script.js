@@ -7,7 +7,8 @@ var question = document.getElementById("questions");
 var choices = document.getElementById("choices");
 var timeLeft = document.getElementById("Time");
 var submitBtn = document.getElementById("submit");
-var intials = document.getElementById("intials")
+var intials = document.getElementById("intials");
+var feedback = document.querySelector("feedback");
 
 //...for quiz variables
 // var timeLeft = 15;
@@ -24,6 +25,10 @@ var intials = document.getElementById("intials")
 //         correct: "cascading style sheets"
 //     },
 // ]
+
+var currentQuestion = 0;
+var time = question.length * 15;
+var timerId;
 
 //FUNCTIONS
 //...to start the quiz
@@ -68,7 +73,29 @@ function getQuestion(){
         choices.appendChild(choiceNode);
     });
     }
+    //if guessed wrong
+function questionClick() {
+    if(this.value !== questions[currentQuestionIndex].answer) {
+        //time penalized by 20
+        time -= 20;
 
+        if (time < 0){
+            time = 0;
+        }
+        //display time & if its correct or wrong
+        timeLeft.textContent = time;
+        feedback.textContent = "WRONG";
+        feedback.style.color = "red";
+        feedback.style.fontSize = "350%";
+    } else {
+        feedback.textContent = "CORRECT";
+        feedback.style.color = "green";
+        feedback.style.fontSize = "350%";
+    }
+
+    }
+
+// }
     // //create an element for the question text
     // var questionElem = document.createElement("h2")
     // questionElem.innerText = questions[currentQuestion].text
