@@ -168,6 +168,7 @@ submitBtn.onclick = saveHighscore;
 startBtn.onclick = startQuiz;
 
 intials.onkeyup = checkForEnter;
+
     // //create an element for the question text
     // var questionElem = document.createElement("h2")
     // questionElem.innerText = questions[currentQuestion].text
