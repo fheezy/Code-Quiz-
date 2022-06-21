@@ -92,10 +92,82 @@ function questionClick() {
         feedback.style.color = "green";
         feedback.style.fontSize = "350%";
     }
+// feedback flash
+feedback.setAttribute("class","feedback");
+setTimeout(function(){
+    feedback.setAttribute("class","feedback hide");
+}, 1000);
 
+// Questions after next
+currentQuestionIndex++;
+
+// timer check
+if (currentQuestionIndex === questions.length) {
+    quizEnd();
+  } else {
+    getQuestion();
+  }
+}
+
+function quizEnd() {
+    clearInterval(timerId)
+
+    // show the end screen
+    var lastScreen = document.getElementById("last-screen");
+    lastScreen.removeAttribute("class");
+
+    //final score
+    var finalScore = document.getElementById("final-score");
+    finalScore.textContent = time;
+
+    //question section(hide)
+    question.setAttribute("class", "hide");
+}
+
+function saveHighscore() {
+    var intials = intials.value.trim();
+    if (intials !== "") {
+        //saved scores from local storage
+        var highscores =
+        JSON.parse(window.localStorage.getItem("highscores")) || [];
+
+        //new score format
+        var newScore = {
+            score: time,
+            intials: intials
+        };
+        //storage
+        highscores.push(newScore);
+        window.localStorage.setItem("highscores", JSON.stringify(highscores));
+
+// redirected to score sheet
+        window.location.href = "score.html";
     }
+}
 
-// }
+function clockTick() {
+    time--;
+    timeLeft.textContent = time;
+
+    //user ran out of time
+    if (time <= 0) {
+        quizEnd();
+      }
+}
+
+function checkForEnter(event) {
+    if (event.key === "Enter") {
+        saveHighscore();
+    }
+}
+
+//intials 
+submitBtn.onclick = saveHighscore;
+
+//start quiz
+startBtn.onclick = startQuiz;
+
+intials.onkeyup = checkForEnter;
     // //create an element for the question text
     // var questionElem = document.createElement("h2")
     // questionElem.innerText = questions[currentQuestion].text
