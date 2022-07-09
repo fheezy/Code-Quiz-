@@ -27,3 +27,5 @@ var questions = [
         answer: "JavaScript"
     }
 ];
+
+var currentQuestionIndex = 0;

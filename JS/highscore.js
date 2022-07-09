@@ -1,8 +1,12 @@
 //highscore sheet, all functions will be stored here over the highscore so i can pull it with other files just by tagging the file
 
 function printHighscores() {
-    // either get scores from localstorage or set to empty array
-    var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+
+  console.log("printHighscore()");
+
+        // either get scores from localstorage or set to empty array
+    var highscores = JSON.parse(window.localStorage.getItem("highscores")||"[]");
+    console.log(highscores);
   
     // sort highscores 
     highscores.sort(function(a, b) {
@@ -20,13 +24,13 @@ function printHighscores() {
     });
   }
   
-  function clearHighscores() {
-    window.localStorage.removeItem("highscores");
-    window.location.reload();
-  }
+function clearHighscores() {
+ window.localStorage.removeItem("highscores");
+ window.location.reload();
+}
   
-  document.getElementById("clear").onclick = clearHighscores;
-  
-  // run function when page loads
-  printHighscores();
+// attach clear event to button
+document.getElementById("clear").onclick = clearHighscores;  
+// run function when page loads
+printHighscores();
   
