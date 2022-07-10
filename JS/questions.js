@@ -1,6 +1,6 @@
 //inputting all the questions over here for simplicty 
 
-var questions = [
+var questionList = [
     {
         title: "Commonly used data types DO not include:",
         choices: ["strings","booleans","alerts","numbers"],

@@ -13,17 +13,17 @@
     <div class="clock">Time: <span id="time">0</span></div>
 
     <div class="wrapper">
-        <div id="pop-up-screen" class="pop-up">
+        <div id="start-screen" class="pop-up">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit. <br>
                  Keep in mind that an incorrect answer will penalize your score/time  <br>
                                         by ten seconds! <br>
             </p>
-            <button id="start">Start Quiz</button>
+            <button id="start-btn">Start Quiz</button>
         </div>
     </div>
 
-    <div id="questions-screen" class="hide">
+    <div id="question-screen" class="hide">
         <h2 id="question-screen-title"></h2>
         <div id="question-screen-choices" class="choices"></div>
     </div>
@@ -31,15 +31,14 @@
     <div id="last-screen" class="hide">
         <h2>YOU'RE DONE!</h2>
         <p>Your final score is <span id="final-score"></span></p>
-        <p>Enter initials: <input type="text" id="initials" max="3">
+        <p>Enter initials: <input type="text" id="initials-text" max="3">
             <button id="initials-button">Enter</button>
         </p>
     </div>
 
     <div id="feedback" class="feedback hide"></div>
 <!-- </div> -->
-
-    <script src="./JS/script.js"></script>
     <script src="./JS/questions.js"></script>
+    <script src="./JS/script.js"></script>
 </body>
 </html>
