@@ -14,6 +14,6 @@ SO THAT I can gauge my progress compared to my peers
 
 ## Mock Up 
 
-[Code-Quiz-Mock-Up](./Mock-up.png)
+![Code-Quiz-Mock-Up](./Mock-up.png)
 
 ## 
