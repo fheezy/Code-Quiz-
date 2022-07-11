@@ -42,11 +42,11 @@ Created the repository on github first, used VS code as my programming applicati
 
 ## Deployed Webpage 
 
-click this [link](file:///Users/farhanhoque/Desktop/projects/Code-Quiz-/index.html) in order to deploy this application. 
+click this [link](https://github.com/fheezy/Code-Quiz-) in order to deploy this application. 
 
 ## Credits 
 
-I've created this website howver feel free to vist my [Github](https://github.com/fheezy) page to see any previous to recent projects i have worked on! 
+I've created this website however feel free to vist my [Github](https://github.com/fheezy) page to see any previous to recent projects i have worked on! 
 
 ## License 
 MIT License
